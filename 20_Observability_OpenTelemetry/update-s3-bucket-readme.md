@@ -4,8 +4,8 @@ This guide helps you update the S3 bucket name in all Terraform files for the Op
 
 ---
 
-## Step 1: Create Your S3 Bucket
-
+## Step 1: Create Your S3 Bucket if not created already
+S3 bucket is needed for storing Terraform state
 S3 bucket names are **globally unique** across AWS. Create your own bucket first if not created:
 
 ```bash
