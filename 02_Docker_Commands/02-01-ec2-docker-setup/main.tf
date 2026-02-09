@@ -3,6 +3,8 @@ resource "aws_instance" "docker"{
     instance_type = var.instance_type
     subnet_id = local.subnet_id
     security_groups = [local.sg_id]
+    root_volume_size = 50
+    root_volume_type = "gp3"
     user_data = file("docker.sh")
     tags= merge(
     local.common_tags,{
