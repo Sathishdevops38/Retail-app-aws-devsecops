@@ -1,0 +1,8 @@
+docker run hello-world
+docker images
+docker ps
+docker ps -a
+docker ps -aq
+docker rm $(docker ps -aq)
+docker images -q
+docker rmi $(docker images -q)
